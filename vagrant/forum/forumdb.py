@@ -1,6 +1,6 @@
 #
 # Database access functions for the web forum.
-# 
+# This file has been rolled back 
 
 import time
 
