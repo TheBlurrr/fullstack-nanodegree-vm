@@ -4,7 +4,7 @@
 
 import time
 
-## Database connection
+## Database connection line
 DB = []
 
 ## Get posts from database.
