@@ -20,10 +20,10 @@ def GetAllPosts():
     c.execute('''
       SELECT time, content FROM posts ORDER BY time DESC
       ''')
-    DB.close()
     posts = [{'content': str(row[1]), 'time': str(row[0])} for row in DB]
     posts.sort(key=lambda row: row['time'], reverse=True)
     return posts
+    DB.close()
 
 ## Add a post to the database.
 def AddPost(content):
